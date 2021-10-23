@@ -22,7 +22,6 @@ body {
     max-width: 620px;
     flex-grow: 1;
     position: relative;
-    margin-right: 50px;
 }
 
 .search-input {
@@ -33,6 +32,7 @@ body {
     padding-right: 20px;
     padding-top: 13px;
     padding-bottom: 13px;
+    margin-right: 50px;
 }
 
 .search-button {
@@ -87,3 +87,160 @@ body {
     right:0;
     bottom:0;
 }
+
+.slide {
+    border-radius: 20px;
+    min-height: 400px;
+    display:flex;
+    align-items: center;
+    padding: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-content {
+    max-width: 400px;
+    position: relative;
+}
+
+.slide-text-light {
+    background-color: grey;
+    color: white;
+}
+
+.slide-title {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 51px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.slide-text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+
+.button-primary {
+    background: #F47322;
+    color: white;
+}
+
+.button-default {
+    background-color: #fff;
+    color: #5F5F61;
+}
+.button {
+    border-radius: 25px;
+    padding: 12px 52px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.slide-summer {
+    background-image: url("../img/summer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slide:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100%);
+}
+
+.promo {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 32px;
+    max-width: 570px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.card:before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+
+}
+
+.card-text-light {
+    color: #fff;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    line-height: 23px;
+    margin-top: 4px;
+    margin-bottom: 21px;
+}
+
+.card-description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    max-width: 200px;
+}
+
+.card-price {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 23px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.card-delivery {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+.card-image {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
+
+.sweet-basket {
+    margin-right: 50px;
+   margin-bottom: 50px;
+}
+
